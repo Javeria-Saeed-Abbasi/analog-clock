@@ -54,7 +54,7 @@ html {
     z-index: 0;
     left: 49%;
   }
-  .outer-clock-face .marking {
+  /* .outer-clock-face .marking {
     background: #bdbdcb;
     width: 3px;
   }
@@ -81,7 +81,7 @@ html {
     -webkit-transform: rotate(150deg);
     -moz-transform: rotate(150deg);
     transform: rotate(150deg)
-  }
+  } */
   .inner-clock-face {
     position: absolute;
     top: 10%;

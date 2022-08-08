@@ -4,11 +4,16 @@ const hours = document.querySelector('.hour-hand');
 let numb = "12";
 let drawnumber = function() {
 
-    for (let i = 1; i < 13; i++) {
-  
+    for (let i = 1; i <= 12; i++) {
       let el = document.createElement('div');
       el.setAttribute('class', `number number${i}`);
-      el.style.transform = `rotate(${i*30}deg)`;
+      if(i == 1){
+          el.style.transform = `rotate(${0}deg)`;
+        }
+        else{
+            let j = i - 1;
+            el.style.transform = `rotate(${j*30}deg)`;
+        }
   
       document.querySelector('.numbers').appendChild(el).innerHTML = numb;
 
